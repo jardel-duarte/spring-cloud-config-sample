@@ -1,6 +1,12 @@
 spring:
   application:
     name: users
+  redis:
+    host: localhost
+    password:
+    port: 6379
+  session:
+    store-type: redis
 server:
   port: 8081
 eureka:
