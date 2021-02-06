@@ -21,3 +21,4 @@ db:
     showSql: true
     formatSql: true
     ddlAuto: update
+    dialect: org.hibernate.dialect.PostgreSQLDialect
