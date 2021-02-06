@@ -16,7 +16,7 @@ db:
   username: postgres
   password: 01020304
   port: 5432
-  url: jdbc:postgresql://{db.hostname}:{db.port}/{db.database}
+  url: jdbc:postgresql://${db.hostname}:${db.port}/${db.database}
   hibernate:
     showSql: true
     formatSql: true
