@@ -6,8 +6,14 @@ spring:
     password:
     port: 6379
   session:
+    redis:
+      flush-mode: on-save
+      namespace: spring:session
     store-type: redis
 server:
+  servlet:
+    session:
+      timeout: 3600s
   port: 8081
 eureka:
   client:
