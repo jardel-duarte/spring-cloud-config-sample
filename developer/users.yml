@@ -7,7 +7,7 @@ spring:
     port: 6379
   session:
     session:
-      store-type: none
+      store-type: redis
     autoconfigure:
       exclude:
         - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
