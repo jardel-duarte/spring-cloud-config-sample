@@ -10,6 +10,8 @@ spring:
       flush-mode: on-save
       namespace: spring:session
     store-type: redis
+security:
+  sessions: NEVER
 server:
   servlet:
     session:
