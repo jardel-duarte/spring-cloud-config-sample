@@ -1,6 +1,9 @@
 spring:
   application:
     name: users
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
   redis:
     host: localhost
     password:
@@ -8,9 +11,6 @@ spring:
   session:
     session:
       store-type: redis
-    autoconfigure:
-      exclude:
-        - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
     redis:
       flush-mode: on-save
       namespace: spring:session
