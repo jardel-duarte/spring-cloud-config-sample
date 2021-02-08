@@ -1,9 +1,6 @@
 spring:
   application:
     name: users
-  autoconfigure:
-    exclude:
-      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
   redis:
     host: localhost
     password:
