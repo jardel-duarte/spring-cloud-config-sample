@@ -6,6 +6,11 @@ spring:
     password:
     port: 6379
   session:
+    session:
+      store-type: none
+    autoconfigure:
+      exclude:
+        - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
     redis:
       flush-mode: on-save
       namespace: spring:session
