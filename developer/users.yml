@@ -18,3 +18,16 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+db:
+  driver: org.postgresql.Driver
+  hostname: localhost
+  database: desafio
+  username: postgres
+  password: "01020304"
+  port: 5432
+  url: jdbc:postgresql://${db.hostname}:${db.port}/${db.database}
+    hibernate:
+      showSql: true
+      formatSql: true
+      ddlAuto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
